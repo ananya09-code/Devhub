@@ -1,0 +1,13 @@
+.post-container {
+    background: #ffffff;
+    border: 1px solid #e5e7eb;
+    border-radius: 12px;
+    padding: 16px;
+    margin-bottom: 20px;
+    box-shadow: 0 1px 3px rgba(0, 0, 0, 0.05);
+    transition: box-shadow 0.2s ease;
+}
+
+.post-container:hover {
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
+}

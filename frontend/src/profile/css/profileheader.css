@@ -1,0 +1,87 @@
+.profile-header {
+    background: #1f2937;
+    border-radius: 12px;
+    padding: 24px;
+    margin-bottom: 24px;
+    color: white;
+}
+
+.profile-header-content {
+    display: flex;
+    align-items: flex-start;
+    gap: 20px;
+}
+
+/* Avatar */
+.profile-header .avatar {
+    width: 80px;
+    height: 80px;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 28px;
+    font-weight: 700;
+    color: white;
+    flex-shrink: 0;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
+}
+
+/* User Info */
+.profile-header h2 {
+    margin: 0 0 6px 0;
+    font-size: 26px;
+    font-weight: 700;
+    color: white;
+}
+
+.profile-header p {
+    margin: 0 0 16px 0;
+    color: #d1d5db;
+    font-size: 15.5px;
+}
+
+/* Tags */
+.profile-tag {
+    display: inline-block;
+    background: #374151;
+    color: #e5e7eb;
+    padding: 5px 12px;
+    margin-right: 8px;
+    margin-bottom: 8px;
+    border-radius: 9999px;
+    font-size: 13px;
+    font-weight: 500;
+}
+
+/* Follow Button (if you add it later) */
+.profile-header button {
+    margin-left: auto;
+    padding: 10px 24px;
+    background: #2563eb;
+    color: white;
+    border: none;
+    border-radius: 8px;
+    font-weight: 600;
+    cursor: pointer;
+}
+
+.profile-header button:hover {
+    background: #1d4ed8;
+}
+
+/* Responsive */
+@media (max-width: 640px) {
+    .profile-header {
+        padding: 20px;
+    }
+    
+    .profile-header-content {
+        flex-direction: column;
+        gap: 16px;
+    }
+    
+    .profile-header h2 {
+        font-size: 22px;
+    }
+}

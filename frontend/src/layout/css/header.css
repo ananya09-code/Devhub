@@ -1,0 +1,113 @@
+.Header-con{
+    width: 100%;
+    height: 60px;
+
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+    padding: 20px;
+
+    background: #ffffff;
+    border-bottom: 1px solid #e5e7eb;
+
+    font-family: system-ui, -apple-system, Segoe UI, Roboto, Arial, sans-serif;
+
+    position: sticky;
+    top: 0;
+    z-index: 90;
+}
+
+/* LEFT SIDE */
+.Header-right{
+    display: flex;
+    align-items: center;
+    gap: 20px;
+}
+
+/* LOGO */
+.Header-right span{
+    display: flex;
+    align-items: center;
+    gap: 8px;
+
+    font-size: 18px;
+    font-weight: 600;
+    color: #111827;
+}
+
+/* ICON */
+.Header-right svg{
+    font-size: 20px;
+    color: #2563eb;
+}
+
+/* SEARCH */
+.Header-right input{
+    width: 300px;
+    height: 36px;
+
+    padding: 0 12px;
+
+    border: 1px solid #e5e7eb;
+    border-radius: 8px;
+
+    outline: none;
+
+    font-size: 14px;
+
+    background: #f9fafb;
+
+    transition: 0.2s ease;
+}
+
+.Header-right input:focus{
+    border-color: #2563eb;
+    background: #fff;
+    box-shadow: 0 0 0 3px rgba(37, 99, 235, 0.15);
+}
+
+/* RIGHT SIDE */
+.Header-nav{
+    display: flex;
+    align-items: center;
+}
+
+
+/* TABLET */
+@media (max-width: 768px){
+
+    .Header-right{
+        gap: 10px;
+    }
+
+    .Header-right span{
+        font-size: 16px;
+    }
+
+    .Header-right input{
+        width: 180px;
+    }
+}
+
+/* MOBILE */
+@media (max-width: 480px){
+
+    .Header-right input{
+        display: none; /* hide search on small screens */
+    }
+
+    .Header-right span{
+        font-size: 15px;
+    }
+
+    .profile-span{
+        width: 34px;
+        height: 34px;
+        font-size: 13px;
+    }
+
+    .Header-con{
+        padding: 0 12px;
+    }
+}

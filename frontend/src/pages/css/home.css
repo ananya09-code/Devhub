@@ -1,0 +1,20 @@
+.Home {
+    min-height: 100vh;
+    background: #f9fafb;
+}
+
+/* Main Body Layout */
+.body {
+    display: flex;
+    max-width: 1400px;
+    margin: 0 auto;
+    padding-top: 70px; /* Space for fixed header */
+}
+
+/* Main Content Area */
+.content {
+    flex: 1;
+    max-width: 680px;
+    margin: 0 auto;
+}
+

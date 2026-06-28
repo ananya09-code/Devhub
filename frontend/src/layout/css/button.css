@@ -1,0 +1,69 @@
+.cos-butt {
+    padding: 10px 20px;
+    font-size: 14px;
+    font-weight: 600;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: all 0.2s ease;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    gap: 8px;
+    white-space: nowrap;
+}
+
+/* Default Style - Primary Blue */
+.cos-butt {
+    background: #2563eb;
+    color: white;
+}
+
+.cos-butt:hover {
+    background: #1d4ed8;
+    transform: translateY(-1px);
+    box-shadow: 0 4px 12px rgba(37, 99, 235, 0.3);
+}
+
+.cos-butt:active {
+    transform: translateY(0);
+    box-shadow: 0 2px 6px rgba(37, 99, 235, 0.3);
+}
+
+/* Optional Variants */
+
+.cos-butt.outline {
+    background: transparent;
+    border: 2px solid #2563eb;
+    color: #2563eb;
+}
+
+.cos-butt.outline:hover {
+    background: #2563eb;
+    color: white;
+    box-shadow: 0 4px 12px rgba(37, 99, 235, 0.3);
+}
+
+.cos-butt.secondary {
+    background: #374151;
+    color: white;
+}
+
+.cos-butt.secondary:hover {
+    background: #4b5563;
+}
+
+/* Disabled State */
+.cos-butt:disabled {
+    background: #6b7280;
+    color: #9ca3af;
+    cursor: not-allowed;
+    transform: none;
+    box-shadow: none;
+}
+
+/* Small Button */
+.cos-butt.small {
+    padding: 7px 14px;
+    font-size: 13px;
+}

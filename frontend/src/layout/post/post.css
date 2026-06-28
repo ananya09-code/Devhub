@@ -1,0 +1,184 @@
+/* ====================== POST CONTAINER ====================== */
+.post-container {
+    background: #ffffff;
+    border: 1px solid #e5e7eb;
+    border-radius: 12px;
+    padding: 18px;
+    margin-bottom: 24px;
+    box-shadow: 0 1px 3px rgba(0, 0, 0, 0.06);
+    transition: all 0.2s ease;
+}
+
+.post-container:hover {
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.08);
+    border-color: #d1d5db;
+}
+
+/* ====================== POST HEADER ====================== */
+.post-header {
+    display: flex;
+    align-items: flex-start;
+    gap: 12px;
+    margin-bottom: 16px;
+}
+
+.avatar {
+    width: 42px;
+    height: 42px;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-weight: 700;
+    font-size: 15px;
+    color: white;
+    flex-shrink: 0;
+}
+
+.post-info {
+    flex: 1;
+    min-width: 0;
+}
+
+.username {
+    margin: 0;
+    font-size: 15.5px;
+    font-weight: 600;
+    color: #111827;
+}
+
+.handle-time {
+    margin: 3px 0 0 0;
+    color: #6b7280;
+    font-size: 13.5px;
+}
+
+.language-badge {
+    padding: 4px 11px;
+    border-radius: 9999px;
+    font-size: 12.5px;
+    font-weight: 600;
+    white-space: nowrap;
+    margin-left: auto;
+}
+
+/* ====================== POST CONTENT ====================== */
+.post-content {
+    margin-bottom: 18px;
+}
+
+.post-title {
+    font-size: 17px;
+    font-weight: 600;
+    line-height: 1.45;
+    color: #111827;
+    margin: 0 0 14px 0;
+}
+
+.post-description {
+    color: #374151;
+    line-height: 1.6;
+    margin-bottom: 16px;
+}
+
+/* Code Section */
+.code-section {
+    margin-top: 12px;
+    border: 1px solid #e2e8f0;
+    border-radius: 10px;
+    overflow: hidden;
+}
+
+.code-header {
+    background: #f8fafc;
+    padding: 10px 16px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-bottom: 1px solid #e2e8f0;
+}
+
+.code-title {
+    font-size: 13px;
+    font-weight: 600;
+    color: #64748b;
+}
+
+.toggle-code-btn {
+    background: #eff6ff;
+    color: #2563eb;
+    border: none;
+    padding: 5px 12px;
+    border-radius: 6px;
+    font-size: 13px;
+    font-weight: 500;
+    cursor: pointer;
+}
+
+.toggle-code-btn:hover {
+    background: #dbeafe;
+}
+
+.code-block {
+    background: #f8fafc;
+    border: none;
+    padding: 16px 18px;
+    margin: 0;
+    font-family: ui-monospace, 'Cascadia Mono', 'Segoe UI Mono', monospace;
+    font-size: 14.2px;
+    line-height: 1.6;
+    color: #1e2937;
+    overflow-x: auto;
+    white-space: pre-wrap;
+    word-break: break-all;
+    box-shadow: inset 0 1px 2px rgba(0, 0, 0, 0.03);
+}
+
+/* ====================== POST ACTIONS ====================== */
+.post-actions {
+    display: flex;
+    align-items: center;
+    gap: 24px;
+    padding-top: 14px;
+    border-top: 1px solid #f1f5f9;
+    color: #64748b;
+}
+
+.action-btn {
+    display: flex;
+    align-items: center;
+    gap: 6px;
+    background: none;
+    border: none;
+    color: #64748b;
+    font-size: 14.5px;
+    cursor: pointer;
+    padding: 6px 10px;
+    border-radius: 8px;
+    transition: all 0.2s ease;
+}
+
+.action-btn:hover {
+    background: #f8fafc;
+    color: #2563eb;
+}
+
+.action-btn.liked {
+    color: #ef4444;
+}
+
+/* ====================== RESPONSIVE ====================== */
+@media (max-width: 640px) {
+    .post-container {
+        padding: 16px;
+        margin-bottom: 16px;
+    }
+    
+    .post-actions {
+        gap: 18px;
+    }
+    
+    .post-title {
+        font-size: 16px;
+    }
+}
