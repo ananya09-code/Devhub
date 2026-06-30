@@ -7,7 +7,7 @@ import './css/home.css'
 function Home() {
     return (
            <div className="Home">
-                <Header />
+                <Header loginstats={true}/>
                 <div className="body">
                     <Sidebar />
                     <div className="content">

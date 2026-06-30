@@ -1,10 +1,10 @@
 
 import "./css/avater.css"
 
-function Avatar({logo}){
+function Avatar({logo,onClick}){
     return(
         <div>
-        <span className="profile-span">{logo}</span>
+        <span className="profile-span" onClick={onClick}>{logo}</span>
 
         </div>
     )

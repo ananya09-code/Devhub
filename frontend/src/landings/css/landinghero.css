@@ -1,0 +1,135 @@
+/* LandingHero.css - Light Version */
+
+.hero-con {
+    min-height: 80vh;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    padding: 80px 20px;
+    background:
+        radial-gradient(circle, #dbeafe, transparent 65%),
+        #ffffff;
+    color: #0f172a;
+}
+
+
+/* Main headings */
+.hero-con h1 {
+    margin: 0;
+    font-size: clamp(3rem, 8vw, 6rem);
+    font-weight: 850;
+    line-height: 0.95;
+    letter-spacing: -4px;
+}
+
+
+/* Share Code */
+.hero-con h1:first-child {
+    background: linear-gradient(
+        90deg,
+        #2563eb,
+        #60a5fa
+    );
+
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+
+/* Build Faster */
+.hero-con h1:nth-child(2) {
+    color: #0f172a;
+    margin-bottom: 25px;
+}
+
+
+
+.hero-con p {
+    max-width: 650px;
+    font-size: 1.2rem;
+    line-height: 1.7;
+    color: #64748b;
+    margin-bottom: 40px;
+}
+
+
+
+/* Buttons area */
+.land-butt {
+    display: flex;
+    gap: 18px;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+
+
+.land-butt button {
+    padding: 15px 35px;
+    border-radius: 12px;
+    border: none;
+    font-size: 1rem;
+    font-weight: 650;
+    cursor: pointer;
+    transition: 0.25s ease;
+}
+
+
+
+/* Primary button */
+.land-butt button:first-child {
+
+    background: #2563eb;
+    color: white;
+    box-shadow:
+        0 10px 25px rgba(37,99,235,0.25);
+}
+
+
+.land-butt button:first-child:hover {
+
+    background: #1d4ed8;
+    transform: translateY(-3px);
+}
+
+
+
+/* Secondary button */
+.land-butt button:last-child {
+
+    background: white;
+    color: #2563eb;
+    border: 1px solid #cbd5e1;
+}
+
+
+.land-butt button:last-child:hover {
+
+    background: #eff6ff;
+    transform: translateY(-3px);
+}
+
+
+
+/* mobile */
+@media(max-width:600px){
+
+    .hero-con {
+        padding: 50px 18px;
+    }
+
+
+    .hero-con h1 {
+        font-size: 3rem;
+        letter-spacing: -2px;
+    }
+
+
+    .hero-con p {
+        font-size: 1rem;
+    }
+
+}

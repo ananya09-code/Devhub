@@ -1,0 +1,99 @@
+/* LandingCode.css */
+
+.landcode-con {
+    width: min(700px, 90%);
+    margin: 50px auto;
+}
+
+
+/* code window */
+.landcode-block {
+
+    position: relative;
+
+    background: #0f172a;
+    color: #e2e8f0;
+
+    padding: 55px 35px 35px;
+
+    border-radius: 18px;
+
+    font-size: 1.1rem;
+    line-height: 1.8;
+
+    overflow-x: auto;
+
+    box-shadow:
+        0 25px 60px rgba(15,23,42,0.18);
+
+    border: 1px solid #e2e8f0;
+
+}
+
+
+
+/* Mac window dots */
+.landcode-block::before {
+
+    content: "";
+
+    position: absolute;
+
+    top: 20px;
+    left: 25px;
+
+    width: 13px;
+    height: 13px;
+
+    border-radius: 50%;
+
+    background: #ff5f57;
+
+    box-shadow:
+        22px 0 #febc2e,
+        44px 0 #28c840;
+}
+
+
+
+/* code text */
+.landcode-block code {
+
+    display: block;
+
+    font-family:
+        "Fira Code",
+        "Consolas",
+        monospace;
+
+    white-space: pre;
+
+}
+
+
+/* optional syntax colors */
+.landcode-block code {
+
+    color: #e2e8f0;
+}
+
+
+/* make function line blue */
+.landcode-block code::first-line {
+
+    color: #60a5fa;
+}
+
+
+/* mobile */
+@media(max-width:600px){
+
+    .landcode-block {
+
+        padding: 50px 20px 25px;
+
+        font-size: 0.9rem;
+
+    }
+
+}
