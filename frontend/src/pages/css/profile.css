@@ -1,0 +1,13 @@
+.profile-page {
+    width: 100%;
+    min-height: 100vh;
+    background: #f9fafb;
+}
+
+.profile-container {
+    margin: 0 auto;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}

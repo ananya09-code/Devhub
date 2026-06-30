@@ -73,11 +73,11 @@ export const profileData = {
     tags: ["TypeScript", "Node.js", "React", "MongoDB"],
   },
   
-  stats: {
-    snippets: 38,
-    followers: 1200,           // 1.2k
-    stars: 284
-  },
+stats: [
+  { label: "Snippets", value: 38 },
+  { label: "Followers", value: 1200 },
+  { label: "Stars", value: 284 }
+],
 
   isFollowing: false           // for Follow button state
 };

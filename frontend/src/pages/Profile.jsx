@@ -1,16 +1,39 @@
-
 import Header from "../layout/Header";
-import {profileData} from "../labs/datatest.js"
 import ProfileHeader from "../profile/ProfileHeader";
-function Profile() {
-    return (
-        <div className="Profile">
-            <Header />
-            <ProfileHeader data={profileData} />
+import ProfileStat from "../profile/ProfileStat";
+import Postcontiner from "../layout/Postcontiner";
+import "./css/profile.css";
 
-            <h1>Profile Page</h1>
-            <p>This is the profile page content.</p>
+import { profileData, data } from "../labs/datatest.js";
+
+function Profile() {
+
+    const stats = profileData?.stats || [];
+
+    return (
+        <div className="profile-page">
+
+            <Header />
+
+            <div className="profile-container">
+
+                <ProfileHeader data={profileData} />
+
+                <div className="profile-stats">
+                    {stats.map((stat) => (
+                        <ProfileStat
+                            key={stat.label}
+                            title={stat.label}
+                            value={stat.value}
+                        />
+                    ))}
+                </div>
+
+                <Postcontiner posts={data} />
+
+            </div>
         </div>
     );
-}   
+}
+
 export default Profile;
